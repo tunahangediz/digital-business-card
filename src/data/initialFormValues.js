@@ -2,6 +2,8 @@ const initialFormValues = {
   name: "Laura Smith",
   profession: "Frontend Developer",
   navLinks: { email: "", linkedin: "" },
+  imageActive: true,
+  image: "",
   contents: {
     about:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ratione odio quisquam  Q dolorum ratione odio quisquam fuga!",
@@ -12,26 +14,31 @@ const initialFormValues = {
   socialLinks: [
     {
       name: "github",
-      url: "https://github.com/",
+      url: "github.com/",
+      username: "tunahangediz",
       placeholder: "github username ",
       active: true,
     },
 
     {
       name: "facebook",
-      url: "",
-      placeholder: "facebook url",
+      url: "facebook.com/",
+      username: "facebookUserName",
+      placeholder: "facebook username",
       active: true,
     },
     {
       name: "instagram",
-      url: "https://www.instagram.com/",
+      url: "instagram.com/",
+      username: "tunahangediz",
       placeholder: "Instagram username without @ ",
       active: true,
     },
     {
       name: "twitter",
-      url: "https://twitter.com/",
+      url: "twitter.com/",
+      username: "tunahangediz",
+
       placeholder: "Twitter username without @",
       active: true,
     },

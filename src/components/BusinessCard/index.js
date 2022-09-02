@@ -8,7 +8,7 @@ import UserInfo from "./User/UserInfo";
 
 function BussinesCard({ values }) {
   return (
-    <div className="max-w-sm w-full flex justify-center py-8 sticky top-0 ">
+    <div className="max-w-sm w-full flex justify-center py-8 sm:sticky top-0 ">
       <div className="bg-[#1A1B22] min-w-[360px] w-full rounded-lg pt-6  overflow-hidden">
         <User values={values} />
         <div className="max-w-[270px] mx-auto">

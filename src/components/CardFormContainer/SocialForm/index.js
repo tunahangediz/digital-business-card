@@ -34,11 +34,12 @@ function SocialForm({ formik }) {
             >
               <label htmlFor="navLinks.linkedin">{capatlize(link.name)} </label>
               <Input
-                id="navLinks.linkedin"
-                name="navLinks.linkedin"
+                id={`socialLinks[${i}].username`}
+                name={`socialLinks[${i}].username`}
+                placeHolder={link.placeholder}
                 type="text"
                 onChange={formik.handleChange}
-                value={formik.values.navLinks.linkedin}
+                value={link.username}
               />
             </motion.div>
           )}

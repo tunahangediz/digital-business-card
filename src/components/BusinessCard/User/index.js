@@ -5,9 +5,14 @@ import UserInfo from "./UserInfo";
 function User({ values }) {
   return (
     <div>
-      <div className="w-full  flex justify-center">
-        <Avatar className="w-32 rounded-full" src="/images/img.png" />
-      </div>
+      {values.imageActive && (
+        <div className="w-full  flex justify-center">
+          <Avatar
+            src={values.image}
+            className="w-32 h-32 rounded-full object-cover"
+          />
+        </div>
+      )}
       <UserInfo values={values} />
     </div>
   );

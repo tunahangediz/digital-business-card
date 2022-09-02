@@ -3,7 +3,7 @@ import React from "react";
 
 function Input({ className, ...props }) {
   return (
-    <div className="w-full">
+    <div className="w-full my-2">
       <input
         className={classNames(
           "w-full border rounded-md border-[1px] border-blue-900 focus:border-blue-400 outline-none bg-[#111b28] p-2 text-white",

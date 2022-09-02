@@ -8,7 +8,7 @@ function Home() {
   const [values, setValues] = useState(initialFormValues);
 
   return (
-    <div className="w-full flex md:justify-between md:flex-row flex-col items-center md:items-start ">
+    <div className="w-full flex md:justify-between md:flex-row flex-col-reverse items-center md:items-start ">
       {/* <CardForm setValues={setValues} /> */}
       <CardFormContainer setValues={setValues} />
       <BussinesCard values={values} />
