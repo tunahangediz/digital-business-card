@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import capitalize from "../../../utils/capitalize";
-import capatlize from "../../../utils/capitalize";
+import {
+  default as capatlize,
+  default as capitalize,
+} from "../../../utils/capitalize";
 import Input from "../../Input";
 import CheckBox from "../../UI/CheckBox";
 

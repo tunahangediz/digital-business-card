@@ -1,14 +1,14 @@
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import React, { useEffect } from "react";
 import initialFormValues from "../../data/initialFormValues";
 import ContentForm from "./ContentForm";
 import PersonalInfoForm from "./PersonalInfoForm";
-import Form from "./PersonalInfoForm";
 import SocialForm from "./SocialForm";
 
 function CardFormContainer({ setValues }) {
+  const localValues = JSON.parse(localStorage.getItem("formValues"));
   const formik = useFormik({
-    initialValues: initialFormValues,
+    initialValues: localValues || initialFormValues,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
@@ -16,7 +16,8 @@ function CardFormContainer({ setValues }) {
 
   useEffect(() => {
     setValues(formik.values);
-    console.log(formik.values);
+
+    localStorage.setItem("formValues", JSON.stringify(formik.values));
   }, [formik.values]);
 
   return (

@@ -1,10 +1,8 @@
 import React from "react";
-import Avatar from "../Avatar/Avatar";
 import CardContent from "./CardContent";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import User from "./User";
-import UserInfo from "./User/UserInfo";
 
 function BussinesCard({ values }) {
   return (

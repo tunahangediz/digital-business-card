@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Input from "../../Input";
-import Button from "../../UI/Button";
 import ImageInput from "./ImageInput";
 
 function PersonalInfoForm({ onSubmit, formik }) {

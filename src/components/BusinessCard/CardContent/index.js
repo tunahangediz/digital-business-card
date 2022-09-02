@@ -1,5 +1,4 @@
 import React from "react";
-import { object } from "yup";
 import capitalize from "../../../utils/capitalize";
 import Content from "./Content";
 
