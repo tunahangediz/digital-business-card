@@ -15,9 +15,9 @@ function CardFormContainer({ setValues }) {
   });
 
   useEffect(() => {
-    setValues(formik.values);
-
     localStorage.setItem("formValues", JSON.stringify(formik.values));
+    setValues(formik.values);
+    console.log("formik Changes");
   }, [formik.values]);
 
   return (

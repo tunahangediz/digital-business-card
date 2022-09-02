@@ -1,16 +1,18 @@
 const initialFormValues = {
-  name: "Laura Smith",
+  name: "Tunahan Gediz",
   profession: "Frontend Developer",
-  navLinks: { email: "", linkedin: "" },
+  navLinks: {
+    email: "",
+    linkedin: "https://www.linkedin.com/in/tunahan-gediz/",
+  },
   imageActive: true,
-  image: "",
+  image: "blob:http://localhost:3000/886bf4b6-1ae9-4880-affd-35e6fafbd907",
   contents: {
     about:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. ratione odio quisquam  Q dolorum ratione odio quisquam fuga!",
-    interests:
-      "Lorem, ipsum dolor sit amet consectetur ratione odio quisquam  adipisicing elit. dolorum ratione odio quisquam fuga!",
+      "I am a computer engineering student trying to be a Front End Developer.I created projects with JavaScript. I also have experience with React and Ruby on Rails.",
+    interests: "Front-End development,   web design, JavaScript, React",
   },
-  personalWebsite: "mywepage.com",
+  personalWebsite: "github.com/tunahangediz",
   socialLinks: [
     {
       name: "github",
@@ -19,13 +21,12 @@ const initialFormValues = {
       placeholder: "github username ",
       active: true,
     },
-
     {
       name: "facebook",
       url: "facebook.com/",
       username: "facebookUserName",
       placeholder: "facebook username",
-      active: true,
+      active: false,
     },
     {
       name: "instagram",
@@ -38,7 +39,6 @@ const initialFormValues = {
       name: "twitter",
       url: "twitter.com/",
       username: "tunahangediz",
-
       placeholder: "Twitter username without @",
       active: true,
     },
